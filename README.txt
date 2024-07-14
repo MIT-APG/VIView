@@ -1,7 +1,7 @@
 VIView (Last Updated: 07/14/24)
 Prepared by Sankarsh Rao (srr2949@mit.edu)
 NOTE: Tested on MATLAB 2021a and 2024a
-If VIView is used in work, please cite the corresponding paper!
+If VIView is used in work, please cite the corresponding paper -- details included in the license.
 
 
 
