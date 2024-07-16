@@ -1,4 +1,4 @@
-VIView (Last Updated: 07/14/24)
+VIView (Last Updated: 07/16/24)
 Prepared by Sankarsh Rao (srr2949@mit.edu)
 NOTE: Tested on MATLAB 2021a and 2024a
 If VIView is used in work, please cite our associated paper -- details included in the license.
@@ -7,9 +7,13 @@ If VIView is used in work, please cite our associated paper -- details included 
 
 Start-Up
 =======================
-To open the tool double click VIView.mlapp from the cloned Windows/MacOS/Linux directory. If this does not work, have MATLAB open and right click VIView.mlapp in the correct MATLAB directory and click "Run".
+To open the tool:
 
-Please note that we have disabled resizing the window, since it was causing some trouble in the GUI layout.
+* If MATLAB is not already running: double click VIView.mlapp from the cloned Windows/MacOS/Linux directory. 
+
+* If MATLAB is already open: navigate to the VIView directory through the MATLAB interface, right click VIView.mlapp in the correct MATLAB directory and click "Run".
+
+Please note that we have disabled resizing the window since it was causing some trouble in the GUI layout.
 
 Please wait until the logos appear before using the tool.
 
@@ -26,7 +30,7 @@ Checking the "Sample Gaussian" overrides the data input file and uses the Gaussi
 Some Things to Note
 =======================
 
-* Always start with a cable element and loads should always be connected with cable elements
+* Always start with a cable element. Also, loads cannot be adjacent -- they have to be connected by cables.
 
 * VIView forces the end of the system to be ground, i.e. V(x = L, t) = 0
 
@@ -53,7 +57,7 @@ Please input the following by using the Element Type drop down menu and entering
 Cable = [10, 50, 0.6, 100]
 Load = [50, 0]
 
-The first cable is a typical 10 meter cable from your pulser to the resistor. The load is a 50 ohm resistor with no capacitance. 
+The first cable is a typical 10 meter cable from a pulser to the load. The load is a 50 ohm resistor with no capacitance. 
 
 Now, leave the Probe Location Field blank and make sure that the Load Plots check box is checked (to plot the properties at the load), and change the normalization parameters to be:
 
